@@ -16,5 +16,5 @@ const server = http.createServer((req, res) => {
 });
 
 server.listen(PORT, () => {
-  console.log(`MYCHA AI Server running on port ${PORT}`);
+  console.log(`MYCHA AI Server is running on port ${PORT}`);
 });
