@@ -1,14 +1,20 @@
-// ===================================
-// MYCHA AI Engine
-// Version: Genesis v1.0
-// ===================================
-
-// This is the first function of MYCHA AI.
 function generateReply(message) {
-    return "Hello! I'm MYCHA AI. How can I help you today?";
+
+    if (message.toLowerCase() === "hello") {
+        return "Hello! I'm MYCHA AI. How can I help you today?";
+    }
+
+    if (message.toLowerCase() === "who are you") {
+        return "I'm MYCHA AI, your intelligent website assistant.";
+    }
+
+    if (message.toLowerCase() === "what can you do") {
+        return "I can answer questions, guide users around websites, and in the future perform approved website actions.";
+    }
+
+    return "Sorry, I'm still learning. I'll be smarter soon!";
 }
 
-// Make this function available to other files.
 module.exports = {
     generateReply
 };
