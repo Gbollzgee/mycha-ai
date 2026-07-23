@@ -3,14 +3,12 @@
 // Version: Genesis v1.0
 // ===================================
 
-// This is the brain of MYCHA AI.
-//
-// In the future, this engine will:
-// - Understand user questions
-// - Search the knowledge base
-// - Navigate websites
-// - Perform approved actions
-// - Connect to AI models
-//
-// For now, this file is the placeholder
-// for the intelligence of MYCHA AI.
+// This is the first function of MYCHA AI.
+function generateReply(message) {
+    return "Hello! I'm MYCHA AI. How can I help you today?";
+}
+
+// Make this function available to other files.
+module.exports = {
+    generateReply
+};
