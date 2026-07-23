@@ -1,9 +1,20 @@
+// Import the AI Engine
+const { generateReply } = require("../../ai/engine");
+
 // Chat Controller
+function chatController(req, res) {
 
-// This file contains the logic
-// for replying to users.
+    // Example user message
+    const message = "Hello";
 
-// Soon, MYCHA AI will:
-// - Understand questions
-// - Search the knowledge base
-// - Generate intelligent answers
+    // Ask the AI Engine for a reply
+    const reply = generateReply(message);
+
+    // Send the reply
+    return reply;
+}
+
+// Export the controller
+module.exports = {
+    chatController
+};
